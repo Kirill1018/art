@@ -1,4 +1,4 @@
-package com.example.art.domLay
+package com.example.art.domain
 
 data class Data(
     val title: String,

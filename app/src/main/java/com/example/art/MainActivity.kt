@@ -1,20 +1,25 @@
 package com.example.art
 
 import android.os.Bundle
-import com.google.android.material
-    .bottomnavigation.BottomNavigationView
-import androidx.appcompat.app.AppCompatActivity
+import com.google.android
+    .material.bottomnavigation.BottomNavigationView
+import androidx.appcompat.app
+    .AppCompatActivity
 import androidx.navigation.NavController
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.art.dataLay
-    .RetrofitClient
-import com.example.art.databinding
-    .ActivityMainBinding
-import com.example.art.domLay
-    .Artwork
+import androidx.navigation.fragment
+    .findNavController
+import androidx.navigation.ui
+    .AppBarConfiguration
+import androidx.navigation.ui
+    .setupActionBarWithNavController
+import androidx.navigation.ui
+    .setupWithNavController
+import com.example.art
+    .data.RetrofitClient
+import com.example.art
+    .databinding.ActivityMainBinding
+import com.example.art
+    .domain.Artwork
 import retrofit2.Call
 import retrofit2.Response
 
@@ -30,7 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         val navView: BottomNavigationView = binding.navView
         var navController: NavController? = null//go to purpose screen
-        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main)//class and layout
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id
+            .nav_host_fragment_activity_main)
         if (navHostFragment != null) navController = navHostFragment.findNavController()//obtaining navigation controller associated with fragment container
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
