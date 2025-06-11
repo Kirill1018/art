@@ -7,7 +7,7 @@ import retrofit2.converter.gson
     .GsonConverterFactory
 
 object RetrofitClient {
-    private const val BASE_URL = "https://api.artic.edu/api/v1/"//uniform resource locator
+    private const val BASE_URL = "https://www.rijksmuseum.nl/api/nl/"//uniform resource locator
     val artApi: ArtApi by lazy { Retrofit.Builder().baseUrl(this
         .BASE_URL).addConverterFactory(GsonConverterFactory.create())
         .client(OkHttpClient.Builder().addInterceptor(HttpLoggingInterceptor()

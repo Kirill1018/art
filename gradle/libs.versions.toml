@@ -15,6 +15,11 @@ navigationUiKtx = "2.9.0"
 retrofit = "3.0.0"
 gson = "3.0.0"
 interceptor = "4.12.0"
+glide = "4.16.0"
+activity = "1.10.1"
+runtime = "2.7.1"
+compiler = "2.7.1"
+ktx = "2.7.1"
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -30,6 +35,11 @@ androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation
 com-retrofit = { group = "com.squareup.retrofit2", name = "retrofit",  version.ref = "retrofit" }
 com-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "gson" }
 com-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "interceptor" }
+com-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "runtime" }
+androidx-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "compiler" }
+androidx-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "ktx" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }

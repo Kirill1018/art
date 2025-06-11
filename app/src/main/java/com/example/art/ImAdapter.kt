@@ -3,9 +3,12 @@ package com.example.art
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget
     .RecyclerView
+import com.bumptech.glide
+    .Glide
 import com.example.art
     .domain.Data
 
@@ -16,12 +19,17 @@ class ImAdapter(private var imList: List<Data>) : RecyclerView.Adapter<ImAdapter
                 .id.name)
             val dateText: TextView = this.binding.findViewById(R
                 .id.date)
+            val imageView: ImageView = this.binding.findViewById(R
+                .id.image)
+            val url = data.webImage.url
             val imName = data.title
-            val icDate = data.dateEnd
+            val longName = data.longTitle
             val imTitle = "title: $imName"
-            val imDate = "date: $icDate"
+            val longNameOfIm = "long title: $longName"
             titleText.text = imTitle
-            dateText.text = imDate
+            dateText.text = longNameOfIm
+            Glide.with(this.binding)
+                .load(url).into(imageView)
         }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) : ViewHoldOfIm {
