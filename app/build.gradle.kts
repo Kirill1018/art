@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
 }
 
 android {
@@ -58,6 +58,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.com.glide)
     implementation(libs.androidx.runtime)
-    kapt(libs.androidx.compiler)
+    ksp(libs.androidx.compiler)
     implementation(libs.androidx.ktx)
 }
